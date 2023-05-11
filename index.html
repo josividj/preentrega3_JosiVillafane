@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Preentrega3 - María Josefina Villafañe</title>
+</head>
+
+<body>
+  <main>
+    <div class="contenedor">
+      <h1 class="titulo">Bienvenidos al Gran Concurso de Números Primos</h1>
+      <h2 class="titulo2">¿Se anima a enfrentar a la Computadora?</h2>
+    </div>
+    <h3>¿Cómo se juega?</h3>
+    <div class="tutorial">
+      <p><strong>Tutorial:</strong></p>
+      <p>1. Debe ingresar su nombre</p>
+      <p>2. A continuación 5 números entre el 100 y el 900</p>
+      <p>3. Finalmente colocar esos números en la Caja Mágica que los analizará y nos dirá cuántos y cuáles son
+        números primos</p>
+      <p><strong> GANA quien ingrese la mayor cantidad de números primos</strong></p>
+      <p><strong>¡Suerte!</strong></p>
+    </div>
+    <div class="container px-4 py-5 my-5">
+      <form id="myForm">
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <div class="mb-3 espacio">
+              <label for="nombre-alumno" class="form-label">Alumno:</label>
+              <input type="text" class="form-control" id="nombre-alumno" placeholder="Ingrese nombre alumno">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="mb-3 espacio">
+              <label for="nombre-escuela" class="form-label">Escuela:</label>
+              <input type="text" class="form-control" id="nombre-escuela" placeholder="Ingrese nombre escuela">
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6 mt-4">
+            <button type="button" id="cargar" class="btn btn-primary">Cargar Números</button>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-6">
+            <div class="mb-3 text-center espacio">
+              <label for="numeros" class="form-label">Números elegidos:</label>
+              <input type="text" class="form-control" id="numeros" placeholder="Ingrese 5 números">
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6 mt-4">
+            <input type="submit" id="enviar" class="btn btn-primary">Enviar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+
+
+
+    </div>
+    <p class="continuar">Ahora a colocar los números dentro de la Caja mágica!</p>
+    <section class="container2">
+      <div class="cajamagica">
+        <img src="./img/caja_magica.webp">
+      </div>
+      <div class="caja2">
+        <p class="jugador">Nombre</p>
+        <p class="compu">Computadora</p>
+      </div>
+    </section>
+    <div class="container px-4 py-5 my-5">
+      <form>
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <div class="mb-3 espacio">
+              <label for="nombre-alumno" class="form-label">Alumno:</label>
+              <input type="text" class="form-control" id="nombre-alumno" placeholder="Ingrese nombre alumno">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="mb-3 espacio">
+              <label for="primAlumno">Nº Primos del Alumno</label>
+              <input type="text" class="form-control" id="primAlumno" placeholder="Nº Primos del alumno">
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+          <div class="mb-3 espacio">
+            <label for="primCompu">Nº Primos de la Compu</label>
+            <input type="text" class="form-control" id="primCompu" placeholder="Nº Primos de la Computadora">
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="container mt-4">
+            <button id="consultar" class="btn btn-primary">Consultar</button>
+            <button id="retirar" class="btn btn-primary">Retirar</button>
+            <button id="depositar" class="btn btn-primary">Depositar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+
+    </div>
+  </main>
+  <script src="./alumno.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
